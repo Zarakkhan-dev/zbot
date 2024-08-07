@@ -14,7 +14,7 @@ const Chatbot = () => {
   }
   return (
   <>
-  <div className="Chatbot-interface bg-black h-screen overflow-hidden py-7 px-4">
+  <div className="Chatbot-interface bg-black h-screen overflow-hidden py-2.5 px-4">
     <Sidebar/>
     <Chat/>
   </div>
