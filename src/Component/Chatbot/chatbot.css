@@ -12,3 +12,50 @@
 .querry-message{
     border-radius: 1vh 1vh 0vh 1vh;
 }
+
+.loader {
+    width: 20px;
+    aspect-ratio: 1;
+    --_g: no-repeat radial-gradient(farthest-side,#000 90%,#0000);
+    background: var(--_g), var(--_g), var(--_g);
+    background-size: 25% 25%;
+    animation: l17 2s infinite;
+  }
+  @keyframes l17{ 
+    0%     {background-position: 0% -100%,50% -100%,100% -100%}
+    16.67% {background-position: 0%   50%,50% -100%,100% -100%}
+    33.33% {background-position: 0%   50%,50%   50%,100% -100%}
+    45%,55%{background-position: 0%   50%,50%   50%,100%   50%}
+    66.67% {background-position: 0%  200%,50%   50%,100%   50%}
+    83.33% {background-position: 0%  200%,50%  200%,100%   50%}
+    100%   {background-position: 0%  200%,50%  200%,100%  200%}
+  }
+
+  pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto; /* Ensure responsiveness */
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap; /* Wrap text for small screens */
+  }
+
+  code {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background: #272822;
+    color: #f8f8f2;
+  }
+
+  /* Styling for copy button */
+  .copy-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
